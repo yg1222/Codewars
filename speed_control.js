@@ -28,10 +28,6 @@ With floats it can happen that results depends on the operations order. To calcu
 
 */
 
-//var s = 15; // Where s is seconds
-//var x = [0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25];
-
-
 function gps(s, x) {    
     var deltaDistance = [];
     var speed = [];
@@ -44,12 +40,10 @@ function gps(s, x) {
                 var currentDeltaDistance = x[i] - x[i-1];
                 //Appending the difference to the distance array
                 deltaDistance.push(currentDeltaDistance);
-                //console.log(deltaDistance);
 
                 //Appending the speed to the speed array
                 //Converting unit/seconds into unit/hour by multiplying by 3600 seconds
-                speed.push((currentDeltaDistance / s) * 3600);            
-                //console.log(speed);                   
+                speed.push((currentDeltaDistance / s) * 3600);                           
             }
         }    
     }
@@ -60,5 +54,3 @@ function gps(s, x) {
     console.log(maxSpeed);
     return maxSpeed;
 }
-
-//gps(15, [0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25]);
