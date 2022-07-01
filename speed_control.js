@@ -1,5 +1,5 @@
 /*
-Description:
+Description: 7 kyu
 
 In John's car the GPS records every s seconds the distance travelled from an 
 origin (distances are measured in an arbitrary but consistent unit). 
